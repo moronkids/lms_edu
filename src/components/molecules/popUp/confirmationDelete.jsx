@@ -61,7 +61,7 @@ function ConfirmationDelete(props) {
         <Title>Are you sure delete this {props?.type}?</Title>
       <Wrap className='flex-row'>
           <Btn type_={type} category={'delete-func'} deleteLesson={() => deleteLesson()}  />
-        <Btn type_={type} category={'cancel'} type="submit" >Cancel</Btn>
+          <Btn type_={type} category={'cancel'} type="submit" >Cancel</Btn>
       </Wrap>
       </Wrap>
       </>

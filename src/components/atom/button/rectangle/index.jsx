@@ -131,7 +131,7 @@ function Index(props) {
                             setModal(false)
                         }}>
                             <FontAwesomeIcon icon={faTrash} />
-                            Delete
+                            Yes
                         </DeleteButton>
                     </>
                 )
