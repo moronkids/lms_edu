@@ -9,7 +9,7 @@ import { Hooks } from "components/provider";
 import { useContext } from 'react';
 import FormSession from 'components/molecules/form/session'
 import FormLesson from 'components/molecules/form/lesson'
-import ConfirmationDelete from 'components/molecules/popUp/ConfirmationDelete'
+import ConfirmationDelete from 'components/molecules/popUp/confirmationDelete'
 import { useMemo } from 'react';
 
 const Container = styled.div`
