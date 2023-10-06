@@ -13,6 +13,7 @@ const ContainerPopUp = styled.div`
     padding: 20px;
     @media (max-width: 560px) {
         width: 100%;
+        margin: 0 20px;
     }
 `;
 
