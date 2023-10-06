@@ -9,14 +9,6 @@ import BtnMenu from "components/atom/session/menuBtn";
 import { useContext } from "react";
 import { Hooks } from "../../provider";
 
-// fake data generator
-const getQuestions = count =>
-  Array.from({ length: count }, (v, k) => k).map(k => ({
-    id: `Session-${k}`,
-    content: `Session ${k}`,
-    answers: [`lesson-1`, `lesson-2`, `lesson-3`],
-  }));
-
 const SessionWrap = styled.div`
   display: flex;
   flex-direction: column;
@@ -76,8 +68,7 @@ const TextLesson = styled.div`
   letter-spacing: 0.08px;
 `;
 
-function Questions() {
-  const [questions, setQuestions,] = useState(getQuestions(1));
+function Session() {
   const { dataSession, setDataSession, setIdSession, modal, setModal, setType, type } = useContext(Hooks)
   const onDragEnd = result => {
     // dropped outside the list
@@ -177,4 +168,4 @@ function Questions() {
   );
 }
 
-export default Questions;
+export default Session;

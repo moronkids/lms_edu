@@ -123,7 +123,7 @@ const ButtonResponsive = styled.div`
     display: flex;
    }
 `;
-const Answers = props => {
+const Lesson = props => {
   const {modal, setModal, setDataSession, dataSession, setType, setIdLesson, setIdSession} = useContext(Hooks)
   const { question, questionNum } = props;
   return (
@@ -223,4 +223,4 @@ const Answers = props => {
   );
 };
 
-export default Answers;
+export default Lesson;
