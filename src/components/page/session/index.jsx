@@ -74,7 +74,6 @@ function Index() {
       </>
      )
   }, [type, modal])
-  console.log(type ,"<dbg")
   return (
     <>
       <Header />

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
-import { Reorder, getItemStyle, getQuestionListStyle } from "components/atom/utils.js";
+import { Reorder} from "components/atom/utils.js";
 import Answers from "components/atom/lesson";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { styled } from "styled-components";
@@ -86,7 +86,6 @@ function Questions() {
     }
 
     if (result.type === "QUESTIONS") {
-      console.log(result);
       const updatedQuestions = Reorder(
         dataSession,
         result.source.index,

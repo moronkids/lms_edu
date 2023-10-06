@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Droppable, Draggable } from "react-beautiful-dnd";
-import { getItemStyle, getAnswerListStyle } from "components/atom/utils.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from '@fortawesome/free-regular-svg-icons'
 import { faCircle } from '@fortawesome/free-solid-svg-icons'
@@ -127,7 +126,6 @@ const ButtonResponsive = styled.div`
 const Answers = props => {
   const {modal, setModal, setDataSession, dataSession, setType, setIdLesson, setIdSession} = useContext(Hooks)
   const { question, questionNum } = props;
-  console.log("<<session", dataSession)
   return (
     <Droppable droppableId={`droppable${question.id}`} type={`${questionNum}`}>
       {(provided, snapshot) => (

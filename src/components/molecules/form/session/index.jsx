@@ -39,14 +39,10 @@ function Index() {
         formState: { errors }
     } = useForm({ mode: "all" });
     const onSubmit = (data) => {
-        console.log(localType, "<<tp")
-
         if (localType === 'Update Session') {
-            console.log(data.session_name, "<<ssx")
             try {
                 const data_ = [...dataSession]
                 data_[idSession].content = data.session_name
-                console.log(data_, "<<after")
                 setDataSession(data_)
                 setModal(false)
                 toast.success('Successfully update Session', {
@@ -61,7 +57,6 @@ function Index() {
                 });
             } catch (error) {
                 alert("error")
-                console.log(error)
                 setModal(true);
                 toast.error('Failed update Session', {
                     position: "top-right",

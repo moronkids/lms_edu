@@ -60,11 +60,9 @@ const useOutsideClick = (callback) => {
 function Index(props) {
     const { type, modal, setModal } = useContext(Hooks);
     const handleClickOutside = () => {
-        console.log('<<modal-clicked', modal, !modal)
         setModal(false)
     };
     const ref = useOutsideClick(handleClickOutside);
-    console.log("<<modal", modal)
 
     const renderMemo = useMemo(() => {
         return (

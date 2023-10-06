@@ -40,7 +40,6 @@ function Index() {
             try {
                 const data_ = [...dataSession]
                 data_[idSession].answers[idLesson] = data.lesson_name
-                console.log(data_, "<<after")
                 setDataSession(data_)
                 setModal(false)
                 toast.success('Successfully update Lesson', {
@@ -54,8 +53,6 @@ function Index() {
                     theme: "light",
                 });
             } catch (error) {
-                alert("error")
-                console.log(error)
                 setModal(true)
                 toast.error('Failed update Lesson', {
                     position: "top-right",
@@ -75,7 +72,6 @@ function Index() {
                 data_[idSession].answers.push(
                     data.lesson_name
                 )
-                console.log(data_, "<<after")
                 setDataSession(data_)
                 setModal(false)
                 toast.success('Successfully create Lesson', {
@@ -89,7 +85,6 @@ function Index() {
                     theme: "light",
                 });
             } catch (error) {
-                console.log(error, "<<after-2")
                 setModal(true);
                 toast.error('Failed create Lesson', {
                     position: "top-right",
@@ -105,7 +100,6 @@ function Index() {
         }
 
     }
-    console.log("<<type", dataSession?.[idSession]?.answers, idLesson)
     return (
         <>
             <Form onSubmit={handleSubmit(onSubmit)}>
