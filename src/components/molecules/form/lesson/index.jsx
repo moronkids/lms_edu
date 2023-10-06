@@ -123,7 +123,7 @@ function Index() {
                                 e.preventDefault();
                                 handleSubmit(onSubmit);
                             }}>
-                                Submit</Btn>
+                                {type === 'Update Lesson' ? 'Update' : 'Submit'}</Btn>
                         </label>
                         <button id="test" type="submit" value="" style={{ display: "none" }} />
                     </div>

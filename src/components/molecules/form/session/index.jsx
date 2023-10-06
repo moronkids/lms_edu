@@ -131,7 +131,7 @@ function Index() {
                                 handleSubmit(onSubmit);
                                 setLocalType(type)
                             }}>
-                                Submit</Btn>
+                                {type === 'Update Session' ? 'Update' : 'Submit'}</Btn>
                         </label>
                         <button id="test" type="submit" value="" style={{ display: "none" }} />
                     </div>
