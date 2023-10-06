@@ -10,7 +10,10 @@ const ContainerPopUp = styled.div`
     border: 1px solid gray;
     border-radius: 10px;
     z-index: 1;
-        padding: 20px;
+    padding: 20px;
+    @media (max-width: 560px) {
+        width: 100%;
+    }
 `;
 
 const Container = styled.div`
@@ -22,6 +25,9 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 560px) {
+        width: 100%;
+    }
 
 `;
 
@@ -36,6 +42,9 @@ const ContainerBg = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 560px) {
+        width: 100%;
+    }
 `;
 
 
