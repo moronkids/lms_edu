@@ -13,7 +13,13 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
+@media (prefers-color-scheme: dark) {
+  /* Override dark mode styles (optional) */
+  body {
+    background-color: white;
+    color: black;
+  }
+}
 a {
   font-weight: 500;
   color: #646cff;
